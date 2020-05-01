@@ -16,3 +16,5 @@ Then 4 is the first bad version.
 
 **Algorithm**:
 Binary Search for the first occurrence of the true by constantly updating left and right pointers.
+
+**Solution Link**: [First Bad Version](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/First_Bad_Version.java)
