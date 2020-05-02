@@ -18,3 +18,20 @@ Then 4 is the first bad version.
 Binary Search for the first occurrence of the true by constantly updating left and right pointers.
 
 **Solution Link**: [First Bad Version](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/First_Bad_Version.java)
+
+## 2. Jewels and Stones
+You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
+
+The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+**Example**:
+Input: J = "aA", S = "aAAbbbb"
+Output: 3
+
+Input: J = "z", S = "ZZ"
+Output: 0
+
+**Algorithm**:
+Store all the chars of J in a HashSet and search for each char of S along with incrementing the count.
+
+**Solution Link**: [Jewels and Stones](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Jewels_and_Stones.java)
