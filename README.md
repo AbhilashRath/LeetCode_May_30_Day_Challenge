@@ -14,6 +14,8 @@ call isBadVersion(4) -> true
 
 Then 4 is the first bad version. 
 
+**Topic**: Binary Search
+
 **Algorithm**:
 Binary Search for the first occurrence of the true by constantly updating left and right pointers.
 
@@ -31,7 +33,30 @@ Output: 3
 Input: J = "z", S = "ZZ"
 Output: 0
 
+**Topic**: HashSets,HashTables
+
 **Algorithm**:
 Store all the chars of J in a HashSet and search for each char of S along with incrementing the count.
 
 **Solution Link**: [Jewels and Stones](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Jewels_and_Stones.java)
+
+## 3. Ransom Note
+Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
+
+Each letter in the magazine string can only be used once in your ransom note.
+
+**Note**:
+You may assume that both strings contain only lowercase letters.
+
+**Example**:
+canConstruct("a", "b") -> false
+canConstruct("aa", "ab") -> false
+canConstruct("aa", "aab") -> true
+
+**Topic**: HashMaps
+
+**Algorithm**:
+Store all chars of magazine string in a hashmap mapping it to its number of occurrences. Loop through each character of ransomNote string and check if its present in magazine string, if not present return false or if all of its occurrences are previously exhausted then return false. If whole loop is executed successfully then return true.
+
+**Solution Link**: [Ransom Note](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Ransom_Note.java)
+
