@@ -60,7 +60,7 @@ Store all chars of magazine string in a hashmap mapping it to its number of occu
 
 **Solution Link**: [Ransom Note](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Ransom_Note.java)
 
-## 5. Number Complement
+## 4. Number Complement
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
 
 **Note**:
@@ -83,7 +83,7 @@ Convert the Integer to binary representation. and replace zeroes with ones and c
 
 **Solution Link**: [Number Complement](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Number_Complement.java)
 
-## 4. First Unique Character In String
+## 5. First Unique Character In String
 Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
 **Note**:
 You may assume the string contain only lowercase letters.
