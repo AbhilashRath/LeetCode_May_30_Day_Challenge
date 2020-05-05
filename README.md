@@ -60,7 +60,7 @@ Store all chars of magazine string in a hashmap mapping it to its number of occu
 
 **Solution Link**: [Ransom Note](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Ransom_Note.java)
 
-## 4. Number Complement
+## 5. Number Complement
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
 
 **Note**:
