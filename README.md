@@ -8,7 +8,7 @@ You are given an API bool isBadVersion(version) which will return whether versio
 **Example**:
 Given n = 5, and version = 4 is the first bad version.
 
-call isBadVersion(3) -> false
+call isBadVersion(3) -> false 
 call isBadVersion(5) -> true
 call isBadVersion(4) -> true
 
@@ -82,4 +82,23 @@ Explanation: The binary representation of 1 is 1 (no leading zero bits), and its
 Convert the Integer to binary representation. and replace zeroes with ones and convert the binary representation to corresponding integer.
 
 **Solution Link**: [Number Complement](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Number_Complement.java)
+
+## 4. First Unique Character In String
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+**Note**:
+You may assume the string contain only lowercase letters.
+
+**Example**:
+s = "leetcode"
+return 0.
+
+s = "loveleetcode",
+return 2.
+
+**Topic**: Strings, HashMaps
+
+**Algorithm**:
+Map all the characters of the string with occurrence. Loop through all the character and return the index of first character whose occurrence is 1.
+
+**Solution Link**: [First Unique Character in String](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/First_Unique_Character_in_String.java)
 
