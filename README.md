@@ -102,3 +102,21 @@ Map all the characters of the string with occurrence. Loop through all the chara
 
 **Solution Link**: [First Unique Character in String](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/First_Unique_Character_in_String.java)
 
+## 6. Majority Element
+Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+**Example**:
+Input: [3,2,3]
+Output: 3
+
+Input: [2,2,1,1,1,2,2]
+Output: 2
+
+**Topic**: Arrays, Greedy
+
+**Algorithm**:
+Sort the array and n/2th element is the answer.
+
+**Solution Link**: [Majority Element](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Majority_Element.java)
+
