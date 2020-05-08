@@ -143,5 +143,22 @@ Breadth first search and do the required operations.
 
 **Solution Link**: [Cousins in Binary Tree](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Cousins_in_Binary_Tree.java)
 
+## 8. Check If It Is a Straight Line
+You are given an array coordinates, coordinates[i] = [x, y], where [x, y] represents the coordinate of a point. Check if these points make a straight line in the XY plane.
+
+**Example**:
+Input: coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]
+Output: true
+
+Input: coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]
+Output: false
+
+**Topic**: Mathematics
+
+**Algorithm**:
+Basic coordinate geometry question. Check if each coordinate fits in the equation of straight line formed from any two points.
+
+**Solution Link**: [Check If It Is a Straight Line](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Check_If_It_Is_a_Straight_Line.java)
+
 
 
