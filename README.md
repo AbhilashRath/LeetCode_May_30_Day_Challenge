@@ -162,3 +162,4 @@ Basic coordinate geometry question. Check if each coordinate fits in the equatio
 
 
 
+Abhilash Rath
