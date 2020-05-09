@@ -160,6 +160,21 @@ Basic coordinate geometry question. Check if each coordinate fits in the equatio
 
 **Solution Link**: [Check If It Is a Straight Line](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Check_If_It_Is_a_Straight_Line.java)
 
+## 9. Valid Perfect Square
+Given a positive integer num, write a function which returns True if num is a perfect square else False.
 
+**Note** : Do not use any built-in library function such as sqrt.
 
-Abhilash Rath
+**Example**:
+Input: 16
+Output: true
+
+Input: 14
+Output: false
+
+**Topic**: Binary Search
+
+**Algorithm**:
+Binary Search for the square root between 1 and Integer.MAX_VALUE
+
+**Solution Link**: [Valid Perfect Square](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Valid_Perfect_Square.java)
