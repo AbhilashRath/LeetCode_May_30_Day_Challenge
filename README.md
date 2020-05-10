@@ -178,3 +178,5 @@ Output: false
 Binary Search for the square root between 1 and Integer.MAX_VALUE
 
 **Solution Link**: [Valid Perfect Square](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Valid_Perfect_Square.java)
+
+## 10. 
