@@ -210,3 +210,5 @@ Output: 3
 
 **Algorithm**
 Store the count of trustees in a hasmap. The person with N-1 trustees is a potential judge. Now check if the potential judge knows anyone by binary searching, then return -1. Else return potential judge.
+
+**Solution Link**: [Find the Town Judge](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Find_the_Town_Judge.java)
