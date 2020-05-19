@@ -240,4 +240,159 @@ Perform BFS starting from sr and sc and update the value of previous color with 
 
 **Solution Link**: [Flood Fill](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Flood_Fill.java)
 
-//Author: Abhilash
+## 12. Remove K Digits
+Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+
+**Note**: The length of num is less than 10002 and will be ≥ k. The given num does not contain any leading zero.
+
+**Example**:
+Input: num = "1432219", k = 3
+Output: "1219"
+Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.
+
+Input: num = "10200", k = 1
+Output: "200"
+Explanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes.
+
+Input: num = "10", k = 2
+Output: "0"
+Explanation: Remove all the digits from the number and it is left with nothing which is 0.
+
+**Algorithm**
+Greediest Approach is selecting the next smallest integer as much permissible by value of k using stack.
+
+**Solution Link**: [Remove K Digits](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Remove_K_Digits.java)
+
+## 13. Maximum Sum Circular Subarray
+Given a circular array C of integers represented by A, find the maximum possible sum of a non-empty subarray of C.
+
+Here, a circular array means the end of the array connects to the beginning of the array.  (Formally, C[i] = A[i] when 0 <= i < A.length, and C[i+A.length] = C[i] when i >= 0.)
+
+Also, a subarray may only include each element of the fixed buffer A at most once.  (Formally, for a subarray C[i], C[i+1], ..., C[j], there does not exist i <= k1, k2 <= j with k1 % A.length = k2 % A.length.)
+
+**Example**:
+Input: [1,-2,3,-2]
+Output: 3
+Explanation: Subarray [3] has maximum sum 3
+
+Input: [5,-3,5]
+Output: 10
+Explanation: Subarray [5,5] has maximum sum 5 + 5 = 10
+
+Input: [3,-1,2,-1]
+Output: 4
+Explanation: Subarray [2,-1,3] has maximum sum 2 + (-1) + 3 = 4
+
+Input: [3,-2,2,-3]
+Output: 3
+Explanation: Subarray [3] and [3,-2,2] both have maximum sum 3
+
+Input: [-2,-3,-1]
+Output: -1
+Explanation: Subarray [-1] has maximum sum -1
+
+**Algorithm**
+Calculate the maximum sum subarray when non circular. Calculate when circular, how can this be done? Negative all the elements of array and and calculate the maximum sum subarray and add it to the total sum. This is the maximum sum when circular. Find the max of both the sums.
+
+**Solution Link**: [Maximum Sum Circular Subarray](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Maximum_Sum_Circular_Subarray.java)
+
+## 14. Odd Even Linked List
+Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
+
+You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
+
+**Example**:
+Input: 1->2->3->4->5->NULL
+Output: 1->3->5->2->4->NULL
+
+Input: 2->1->3->5->6->4->7->NULL
+Output: 2->3->6->7->1->5->4->NULL
+
+**Algorithm**
+Create linkedList of odd nodes, Create linkedList of even nodes, Join them.
+
+**Solution Link**: [Odd Even Linked List](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Odd_Even_Linked_List.java)
+
+## 15. Find All Anagrams in a String
+Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
+
+Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
+
+The order of output does not matter.
+
+**Example**:
+Input:
+s: "cbaebabacd" p: "abc"
+
+Output:
+[0, 6]
+
+Explanation:
+The substring with start index = 0 is "cba", which is an anagram of "abc".
+The substring with start index = 6 is "bac", which is an anagram of "abc".
+
+Input:
+s: "abab" p: "ab"
+
+Output:
+[0, 1, 2]
+
+Explanation:
+The substring with start index = 0 is "ab", which is an anagram of "ab".
+The substring with start index = 1 is "ba", which is an anagram of "ab".
+The substring with start index = 2 is "ab", which is an anagram of "ab".
+
+**Algorithm**
+Find all the anagrams using sliding window approach.
+
+**Solution Link**: [Find All Anagrams in a String](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Find_All_Anagrams_in_a_String.java)
+
+## 16. Permutation in String
+Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
+
+**Example**:
+Input: s1 = "ab" s2 = "eidbaooo"
+Output: True
+Explanation: s2 contains one permutation of s1 ("ba").
+
+Input:s1= "ab" s2 = "eidboaoo"
+Output: False
+
+**Algorithm**
+Find the anagram using sliding window approach, when found return true.
+
+**Solution Link**: [Permutation in String](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Permutation_in_String.java)
+
+## 17. Online Stock Span
+Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock's price for the current day.
+
+The span of the stock's price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today's price.
+
+For example, if the price of a stock over the next 7 days were [100, 80, 60, 70, 60, 75, 85], then the stock spans would be [1, 1, 1, 2, 1, 4, 6].
+
+**Example**:
+Input: ["StockSpanner","next","next","next","next","next","next","next"], [[],[100],[80],[60],[70],[60],[75],[85]]
+Output: [null,1,1,1,2,1,4,6]
+Explanation: 
+First, S = StockSpanner() is initialized.  Then:
+S.next(100) is called and returns 1,
+S.next(80) is called and returns 1,
+S.next(60) is called and returns 1,
+S.next(70) is called and returns 2,
+S.next(60) is called and returns 1,
+S.next(75) is called and returns 4,
+S.next(85) is called and returns 6.
+
+Note that (for example) S.next(75) returned 4, because the last 4 prices
+(including today's price of 75) were less than or equal to today's price.
+
+**Note**:
+Calls to StockSpanner.next(int price) will have 1 <= price <= 10^5.
+There will be at most 10000 calls to StockSpanner.next per test case.
+There will be at most 150000 calls to StockSpanner.next across all test cases.
+The total time limit for this problem has been reduced by 75% for C++, and 50% for all other languages.
+
+**Algorithm**
+The span od each day is the difference between the date and the nearest date when the price is higher than the current. Use stack to keep the record.
+
+**Solution Link**: [Online Stock Span](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Online_Stock_Span.java)
