@@ -396,3 +396,23 @@ The total time limit for this problem has been reduced by 75% for C++, and 50% f
 The span od each day is the difference between the date and the nearest date when the price is higher than the current. Use stack to keep the record.
 
 **Solution Link**: [Online Stock Span](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Online_Stock_Span.java)
+
+## 18. Kth Smallest Element in a BST
+Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+**Note**: You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+
+**Example**:
+Input: root = [3,1,4,null,2], k = 1
+<br>
+Output: 1
+
+Input: root = [5,3,6,2,4,null,null,1], k = 3
+<br>
+Output: 3
+
+**Algorithm**
+Inorder traverse and maintaining a counter and when the counter hits k return node value. Since the inorder traversal of the BST is sorted.
+
+**Solution Link**: [Kth Smallest Element in a BST](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Kth_Smallest_Element_in_a_BST.java)
+
