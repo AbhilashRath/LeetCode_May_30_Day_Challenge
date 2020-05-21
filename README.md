@@ -416,3 +416,40 @@ Inorder traverse and maintaining a counter and when the counter hits k return no
 
 **Solution Link**: [Kth Smallest Element in a BST](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Kth_Smallest_Element_in_a_BST.java)
 
+## 19. Count Square Submatrices with All Ones
+Given a m * n matrix of ones and zeros, return how many square submatrices have all ones.
+
+**Example**:
+Input: matrix =
+[
+  [0,1,1,1],
+  [1,1,1,1],
+  [0,1,1,1]
+]
+<br>
+Output: 15
+<br>
+Explanation: 
+There are 10 squares of side 1.
+There are 4 squares of side 2.
+There is  1 square of side 3.
+Total number of squares = 10 + 4 + 1 = 15.
+<br>
+Input: matrix = 
+[
+  [1,0,1],
+  [1,1,0],
+  [1,1,0]
+]
+<br>
+Output: 7
+<br>
+Explanation: 
+There are 6 squares of side 1.  
+There is 1 square of side 2. 
+Total number of squares = 6 + 1 = 7.
+
+**Algorithm**
+Loop through the matrix and count the minimum possible square and add it to the total count doing bfs.
+
+**Solution Link**: [Count Square Submatrices with All Ones](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Count_Square_Submatrices_with_All_Ones.java)
