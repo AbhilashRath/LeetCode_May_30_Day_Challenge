@@ -453,3 +453,33 @@ Total number of squares = 6 + 1 = 7.
 Loop through the matrix and count the minimum possible square and add it to the total count doing bfs.
 
 **Solution Link**: [Count Square Submatrices with All Ones](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Count_Square_Submatrices_with_All_Ones.java)
+
+## 20. Sort Characters By Frequency
+Given a string, sort it in decreasing order based on the frequency of characters.
+
+**Example**:
+Input:"tree"
+<br>
+Output:"eert"
+<br>
+Explanation:'e' appears twice while 'r' and 't' both appear once.So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
+<br>
+<br>
+Input:"cccaaa"
+<br>
+Output:"cccaaa"
+<br>
+Explanation: Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.Note that "cacaca" is incorrect, as the same characters must be together.
+<br>
+<br>
+Input:"Aabb"
+<br>
+Output:"bbAa"
+<br>
+Explanation:"bbaA" is also a valid answer, but "Aabb" is incorrect.Note that 'A' and 'a' are treated as two different characters.
+<br>
+<br>
+**Algorithm**
+Store the frequency of all the characters in a hashMap. Sort the HashMap according the value. Now retrieve the characters frequency times in an empty stringbuilder.Return ans.
+
+**Solution Link**: [Sort Characters By Frequency](https://github.com/AbhilashRath/LeetCode_May_30_Day_Challenge/blob/master/Sort_Characters_By_Frequency.java)
